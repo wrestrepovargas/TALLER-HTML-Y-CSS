@@ -1,0 +1,96 @@
+.total {
+    margin:0 5%;
+}
+
+.estructura {
+    margin: 0 11%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.indicadores {
+    flex-basis: 50%;
+    font-family: Bookman Old Style;
+    font-size: 16px;
+
+}
+.indicadores:hover{
+    transform: scale(1.1);
+    transition: all .3s;
+    background-color: rgba(0,0,200,0.5);
+    flex-basis: 50%;
+ 
+}
+
+.format {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.firma{
+    margin-top: 100px;
+    border-radius: 5px;
+    border: none;
+    height: 100px;
+    width: 190px;   
+    transform: scale(1.2);
+    transition: all .3s;
+}
+.firma:hover{
+    transform: scale(1);
+}
+
+.picture{
+    border-radius: 25px;
+    border: solid;
+    border-color: #1293E7;
+    height: 250px;
+    width: 230px;
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.picture:hover{
+    transform: scale(.7);
+}
+
+.marcos {
+    border-radius: 15px;
+    border:2px solid aqua;
+    animation-name: changecolor;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: deepskyblue;
+    text-align: center;
+    font-size: 34px;
+    font-family: Bookman Old Style;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 14PX;
+}
+
+@media screen and (max-width:591px){
+    .marcos {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 21px;
+    }   
+}
+
+@keyframes changecolor{
+    35%{
+        border:2px solid #0791F6;
+    }
+    60% {
+        border:2px solid 079FF6;  
+    }
+    95% {
+        border:2px solid #07CBF6;
+    }
+}
+
